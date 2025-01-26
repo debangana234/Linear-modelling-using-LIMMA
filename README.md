@@ -57,7 +57,12 @@ Let us understand how to implement this using a few lines of code:
 Create the design matrix. The matrix specifies how the dependent variable is associated with the covariates and the group labels. It can also include additional covariates or continuous variables (e.g., age, sex) alongside group labels from the metadata.
 
 
-**Y_CpG = β₀ + β₁X₁ + β₂X₂ + ... + ε**
+**Y_CpG = β₀ + β₁X₁ + β₂X₂ + ... + ε**  
+Where:
+- Y_CpG: Methylation level of the CpG site.
+- X₁, X₂, ...: Covariates (features) such as group labels, age, or sex.
+- β₀, β₁, β₂, ...: Coefficients representing the effect of each covariate.
+- ε: Residual error (unexplained variability).
 
 
 
