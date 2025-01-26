@@ -58,7 +58,7 @@ Create the design matrix. The matrix specifies how the dependent variable is ass
 
 
 ```
-**Y_CpG = β₀ + β₁X₁ + β₂X₂ + ... + ε**  
+Y_CpG = β₀ + β₁X₁ + β₂X₂ + ... + ε
 Where:
 - Y_CpG: Methylation level of the CpG site.
 - X₁, X₂, ...: Covariates (features) such as group labels, age, or sex.
