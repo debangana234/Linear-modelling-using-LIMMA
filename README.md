@@ -57,6 +57,9 @@ Let us understand how to implement this using a few lines of code:
 Create the design matrix. The matrix specifies how the dependent variable is associated with the covariates and the group labels. It can also include additional covariates or continuous variables (e.g., age, sex) alongside group labels from the metadata.
 
 
+**Y_CpG = β₀ + β₁X₁ + β₂X₂ + ... + ε**
+
+
 
 
 
