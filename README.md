@@ -94,7 +94,7 @@ top_cpgs <- topTable(fit_contrast, number = 1000, adjust = "BH")
 **Multiple tests that are done across thousands of cpg sites could increase the False Discovery Rate. Benjamini Hochberg correction controls the FDR.**By controlling the FDR, it allows researchers to detect true differences while limiting false positives.  
 
 
-So, we are ready for further analysis with the top differentially methylated sites!
+Now we are ready for further analysis of the top differentially methylated sites!
 
 
 
