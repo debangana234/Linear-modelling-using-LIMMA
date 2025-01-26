@@ -43,6 +43,7 @@ In simple statistical terms, **the t-statistic measures the number of standard e
 Now we need to interpret this in our methylation context.
 
 Mathematically the t-statistic at each CpG site is calculated as:
+**$t = \frac{\text{Effect Size}}{\text{Standard Error}} $**
 
 
 
