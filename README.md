@@ -43,8 +43,10 @@ We need to break that down to understand in detail.
 In simple statistical terms, **the t-statistic measures the number of standard errors the estimated coefficient is away from the hypothesized value.**
 Now we need to interpret this in our methylation context.
 
+```
 Mathematically the t-statistic at each CpG site is calculated as:
-**$t = \frac{\text{Effect Size}}{\text{Standard Error}} $**  
+t = Effect_size / Standard Error
+```
 
 
 Here, the effect size is the estimated mean methylation difference between the two groups being compared. **The standard error reflects the variability in methylation across samples and is influenced by both the sample size and the data’s variance. Larger sample sizes or lower variability reduce the standard error, resulting in a larger t-statistic for the same effect size.**  
