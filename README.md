@@ -27,9 +27,7 @@ Firstly, beta values are bounded within the interval 0 to 1. A value of 0 implie
 Secondly, differences in methylation levels near the extremes (e.g., 0.95 vs. 0.90) are less pronounced compared to differences in the middle of the scale (e.g., 0.55 vs. 0.50), leading to unequal variances what we call **heteroscedasticity** in statistics. These reasons make β values unsuitable for linear models that assume homoscedasticity and normality.  
 
 
-Now we have developed an understanding of the M values, let us get back to understanding how limma will help us to solve our Research Question.  
-
-Any Research question starts with the formulation of a null hypothesis. Let the null hypothesis in this case be: **“At a particular CpG site, there is no difference in methylation levels between the compared groups (e.g., case vs. control).”**  
+Now we have developed an understanding of the M values, let us get back to understanding how limma will help us to solve our Research Question. Our Research question starts with the formulation of a null hypothesis. Let the null hypothesis in this case be: **“At a particular CpG site, there is no difference in methylation levels between the compared groups (e.g., case vs. control).”**  
 
 
 How does Limma test for the Null Hypothesis?  
@@ -39,9 +37,9 @@ It helps test this hypothesis by fitting linear models to the M-values at each C
 **The objective is to evaluate evidence against the null hypothesis by calculating a p-value for the t-statistic that quantifies the difference in methylation between groups at each site.**  
 We need to break that down to understand in detail.
 
-What is t-statistic?
+**What is t-statistic?**
 
-In simple statistical terms, The t-statistic measures the number of standard errors the estimated coefficient is away from the hypothesized value.
+In simple statistical terms, **the t-statistic measures the number of standard errors the estimated coefficient is away from the hypothesized value.**
 Now we need to interpret this in our methylation context.
 
 Mathematically the t-statistic at each CpG site is calculated as:
