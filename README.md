@@ -87,7 +87,13 @@ fit_contrast <- eBayes(fit_contrast)
 top_cpgs <- topTable(fit_contrast, number = 1000, adjust = "BH")
 ```
 
+**eBayes moderates the variability in the estimated coefficients for covariates across all CpG sites.** The goal is to ensure robust inference for the covariates effects on methylation levels, even with a small sample size and high-dimensional data.  
 
+
+**Multiple tests that are done across thousands of cpg sites could increase the False Discovery Rate. Benjamini Hochberg correction controls the FDR.**By controlling the FDR, it allows researchers to detect true differences while limiting false positives.  
+
+
+So, we are ready for further analysis with the top differentially methylated sites!
 
 
 
