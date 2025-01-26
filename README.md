@@ -43,7 +43,20 @@ In simple statistical terms, **the t-statistic measures the number of standard e
 Now we need to interpret this in our methylation context.
 
 Mathematically the t-statistic at each CpG site is calculated as:
-**$t = \frac{\text{Effect Size}}{\text{Standard Error}} $**
+**$t = \frac{\text{Effect Size}}{\text{Standard Error}} $**  
+
+
+Here, the effect size is the estimated mean methylation difference between the two groups being compared. **The standard error reflects the variability in methylation across samples and is influenced by both the sample size and the data’s variance. Larger sample sizes or lower variability reduce the standard error, resulting in a larger t-statistic for the same effect size.**  
+
+
+The t-statistic quantifies the difference in methylation relative to the variability in the data. A large positive t-value means the CpG site is more methylated in the test group than in the control group, while a large negative t-value indicates lower methylation in the test group. Thus, the t-statistic measures how many standard errors the observed effect size is away from the null hypothesis value of zero (no difference in methylation).
+
+Finally, the t-statistic is used to calculate a p-value, which determines the statistical significance of the observed difference. A large absolute t-value corresponds to a small p-value, providing evidence against the null hypothesis that there is no difference in methylation at the CpG site.
+
+Let us understand how to implement this using a few lines of code:
+Create the design matrix. The matrix specifies how the dependent variable is associated with the covariates and the group labels. It can also include additional covariates or continuous variables (e.g., age, sex) alongside group labels from the metadata.
+
+
 
 
 
