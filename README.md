@@ -30,7 +30,7 @@ Secondly, differences in methylation levels near the extremes (e.g., 0.95 vs. 0.
 Now we have developed an understanding of the M values, let us get back to understanding how limma will help us to solve our Research Question. Our Research question starts with the formulation of a null hypothesis. Let the null hypothesis in this case be: **“At a particular CpG site, there is no difference in methylation levels between the compared groups (e.g., case vs. control).”**  
 
 
-How does Limma test for the Null Hypothesis?  
+**How does Limma test for the Null Hypothesis?**  
 
 **Limma uses linear models to test if the mean M-values at a CpG site differ significantly between the groups.**
 It helps test this hypothesis by fitting linear models to the M-values at each CpG site, comparing the methylation levels across the groups .   
