@@ -64,6 +64,29 @@ Where:
 - β₀, β₁, β₂, ...: Coefficients representing the effect of each covariate.
 - ε: Residual error (unexplained variability).
 
+The resulting design matrix looks as follows:
+
+<img width="197" alt="Screenshot 2025-01-26 at 17 52 45" src="https://github.com/user-attachments/assets/7d6bfb22-29bf-4122-a0d6-c037c0fabd5d" />  
+
+
+```r
+# Create contrast matrix for comparison
+cont_matrix <- makeContrasts(ParkvsControl = Parkinson - control, levels = design)
+
+# Fit the methylation matrix to a linear model
+fit <- lmFit(Methylation_matrix, design)
+
+# Apply the contrast to the fit object
+fit_contrast <- contrasts.fit(fit, cont_matrix)
+
+# Stabilize variance estimates and compute moderated statistics
+fit_contrast <- eBayes(fit_contrast)
+
+# Generate a list of top 1000 differentially methylated CpG sites
+top_cpgs <- topTable(fit_contrast, number = 1000, adjust = "BH")
+```
+
+
 
 
 
