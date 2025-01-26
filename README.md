@@ -1,6 +1,6 @@
 # Linear-modelling-using-LIMMA
 
-**Understanding linear modelling in differential methylation analysis using the limma method**  
+**Understanding linear modelling in the context of differential methylation analysis using the limma method**  
 
 As a part of my Master Thesis project, I have analysed Methylation datasets, and a very common Research question that I have come across is “Which of the cpg sites are differentially methylated across the different phenotypic groups in the dataset?” In this blog I will be sharing my understanding of the limma method in R using the case of answering my Research question.The focus will be on developing an understanding of the underlying mathematical concept used by the model.  
 
